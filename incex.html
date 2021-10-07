@@ -19,7 +19,7 @@
       width: 400px;
       height: 550px;
       border-radius: 10px;
-      left: 450px;
+     
     }
     img{
      width: 400px;
@@ -40,22 +40,28 @@
     .card-circle{
       background-color: red;
       color: white;
-      width: 12vw;
+      font-weight: lighter;
       border-radius: 15px;
-      position: fixed;
-      bottom: 65px;
-      left: 575px;
+      position: relative;
+      top: 50px;
+      left: 110px;
+      max-width: 12vw;
     }
     .sup{
       background-color: red;
       color: white;
-      border-radius: 50px;
-      padding: 15px;
-      width: 50px;
-      position: fixed;
-      top: 20px;
-      right: 525px;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
       font-weight: 900;
+      font-size: 0.8rem;
+      right: 10px;
+      top: 10px;
     }
   </style>
 </head>
@@ -64,14 +70,16 @@
     <img src="assets/img1.jpeg" alt="img">
     <h1>Paris</h1>
     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem dignissimos temporibus libero incidunt illo placeat in eos impedit illum?</h2>
-  </div>
-  <div >
     <h1 class="card-circle">
       Visit Paris
     </h1>
-  </div>
-  <div class="sup">
+    <h2 class="sup">
     11th
+  </h2>
   </div>
+  <div >
+    
+  </div>
+  
 </body>
 </html>
