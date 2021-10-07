@@ -4,37 +4,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Postioning in CSS</title>
+  <title>Posotioning task</title>
   <style>
     *{
-      margin: 0px;
-      padding: 0px;
+      background-color: whitesmoke;
       box-sizing: border-box;
-      font-family: Metropolis;
-      color:blue;
+      font-style:normal ;
     }
     div{
-      height: 200px;
-      margin: 20px;
-      background-color: cornflowerblue;
-      padding: 20px;
+      position:relative;
     }
-    .two{
-      background-color: cornsilk;
+    .one{
+      background-color: white;  
+      width: 400px;
+      height: 550px;
+      border-radius: 10px;
+      left: 450px;
     }
     img{
-      width: 80px;
+     width: 400px;
+     border-radius: 10px;
+
+    }
+
+    h2{
+      background-color: white;
+      text-align: center;
+      font-weight: lighter;
+    }
+
+    h1{
+      background-color: white;
+      text-align: center;
+    }
+    .card-circle{
+      background-color: red;
+      color: white;
+      width: 12vw;
+      border-radius: 15px;
       position: fixed;
-      bottom: 50px;
-      right: 50px;
-      cursor: pointer;
+      bottom: 65px;
+      left: 575px;
+    }
+    .sup{
+      background-color: red;
+      color: white;
+      border-radius: 50px;
+      padding: 15px;
+      width: 50px;
+      position: fixed;
+      top: 20px;
+      right: 525px;
+      font-weight: 900;
     }
   </style>
 </head>
 <body>
-  <img src="https://www.svgrepo.com/show/332117/message.svg" alt="" class="bot">
-  <div class="two">
-      Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+  <div class="one">
+    <img src="assets/img1.jpeg" alt="img">
+    <h1>Paris</h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem dignissimos temporibus libero incidunt illo placeat in eos impedit illum?</h2>
+  </div>
+  <div >
+    <h1 class="card-circle">
+      Visit Paris
+    </h1>
+  </div>
+  <div class="sup">
+    11th
   </div>
 </body>
 </html>
