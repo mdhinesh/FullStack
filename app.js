@@ -1,10 +1,44 @@
-console.log(typeof 'hello world')
-console.log(typeof 'h')
-console.log(typeof "hello world")
+//operators
 
-console.log(typeof 20)
-console.log(typeof 20.00)
-console.log(typeof 20.40)
+//arithmetic operators
 
-console.log(typeof true)
-console.log(typeof false)
+var a=2
+var b=10
+
+console.log('a+b =', a+b)
+console.log('a-b =', a-b)
+console.log('a*b =', a*b)
+console.log('a/b =', a/b)
+console.log('a**b =', a**b)
+console.log('a%b =', a%b)
+
+//Assignment operator
+b=11
+console.log("b = ", b)
+console.log("b = ", b++)
+b+=10
+console.log("b = ",b)
+console.log("b = ",--b)
+
+//comparison operator
+a=10
+b=11
+f='10'
+console.log(b>a)
+console.log(a>b)
+console.log(a==b)
+
+console.log(a == f)
+console.log(a === f)
+
+//logical operators
+
+console.log(true&&true)
+console.log(true&&false)
+console.log(false&&false)
+console.log(false&&true)
+
+console.log(true||rue)
+console.log(true||false)
+console.log(false||false)
+console.log(false||true)
