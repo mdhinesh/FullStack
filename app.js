@@ -1,8 +1,13 @@
 var heading = document.getElementById('heading')
-var para = document.getElementsByClassName('para')
-var tags = document.getElementsByTagName('a')
-var query = document.querySelector('.para')
+var body = document.querySelector('body')
 
+heading.innerHTML = "I was adde by js"
+heading.style = "color:red; font-size:2rem"
 
-console.log(query)
+heading.classList.add('five')
+heading.classList.remove('one')
 
+console.log(heading.classList)
+
+body.classList.add('dark')
+body.classList.remove('dark')
