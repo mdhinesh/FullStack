@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posotioning task</title>
+  <style>
+    *{
+      background-color: whitesmoke;
+      box-sizing: border-box;
+      font-style:normal ;
+    }
+
+    div{
+      position:relative;
+    }
+
+    .parent{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .child{
+      background-color: white;  
+      width: 350px;
+      height: 500px;
+      border-radius: 10px;
+      flex-direction: row;
+    }
+    img{
+      width: 350px;
+      border-radius: 10px;
+    }
+
+    h2{
+      background-color: white;
+      text-align: center;
+      font-weight: lighter;
+    }
+
+    h1{
+      background-color: white;
+      text-align: center;
+    }
+    .card-circle{
+      background-color: red;
+      color: white;
+      font-weight: lighter;
+      border-radius: 15px;
+      position: absolute;
+      bottom: -40px;
+      left: 110px;
+      padding: 10px;
+    }
+    .sup{
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      font-weight: 900;
+      font-size: 0.8rem;
+      right: 10px;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent"> 
+    <div class="child">
+        <img src="assets/img1.jpeg" alt="img">
+        <h1>Paris</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem dignissimos temporibus libero incidunt illo placeat in eos impedit illum?</h2>
+        <h2 class="card-circle">
+          Visit Paris
+        </h2>
+        <h2 class="sup">
+          11th
+        </h2>
+    </div>
+    <div class="child">
+      <img src="assets/img1.jpeg" alt="img">
+      <h1>Paris</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem dignissimos temporibus libero incidunt illo placeat in eos impedit illum?</h2>
+      <h2 class="card-circle">
+        Visit Paris
+      </h2>
+      <h2 class="sup">
+      11th
+    </h2>
+    </div>
+    <div class="child">
+      <img src="assets/img1.jpeg" alt="img">
+      <h1>Paris</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem dignissimos temporibus libero incidunt illo placeat in eos impedit illum?</h2>
+      <h2 class="card-circle">
+        Visit Paris
+      </h2>
+      <h2 class="sup">
+      11th
+    </h2>
+    </div>
+  </div>
+</body>
+</html>
