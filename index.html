@@ -7,38 +7,22 @@
   <title>CSS</title>
   <style>
     *{
-      padding: 5px;
+      padding: 0;
       margin: 10px;
       box-sizing: border-box;
     }
-
-    .background{
-      color: #f1f1f1;
-    }
-    h1.background{
-      background-color: orange;
-    }
-    h2.background{
-      background-color: orangered;
-    }
-    h2.background#unique{
-      background-color: seagreen;
-    }
-    h3.background{
-      background-color: orchid;
-    }
-    span.background{
-      background-color: violet;
+    div.parent div
+    {
+      background-color: lime;
     }
   </style>
 </head>
-<body>
-  <h1 class="background">heading one</h1>
-  <h2 class="background">heading two</h2>
-  <h2 id="unique" class="background">heading two.o</h2>
 
-  <h3 class="background">heading three
-  </h3>
-  <span class="background">I'm a span</span>
+<body>
+  <div class="parent">
+    <div >I'm a div</div>
+    <div>I'm a second div</div>
+    <div>I'm a third  again</div>
+  </div>
 </body>
 </html>
