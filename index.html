@@ -4,41 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS</title>
+  <title>Todo-list</title>
   <style>
     *{
       padding: 0;
-      margin: 4px;
-      
+      margin: 0;
       box-sizing: border-box;
     }
-
     div.parent{
+      height: 500px;
       background-color: black;
-      min-height: 500px;
     }
     div.child{
-      background-color: yellow;
       height: 100px;
       width: 100px;
       border-radius: 50%;
-      color: white;
-      transition: 0.5s ease-out;
-      cubic-bezier(1, -0.03, 0.58, 1);
+      background-color: blanchedalmond;
+      animation: 1s move ease;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
-    div.parent:hover div.child {
-      background-color: red;
-      transform: translatey(500px);
+
+    div.child-2{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: blanchedalmond;
+      animation: 1s move ease;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-delay: 1s;
+    }
+
+    @keyframes move{
+      0%{      transform: translatey(0vw);
+      }
+      50%{
+        transform: translate(300px,200px);
+        background-color: cyan;
+      }
+      50%{
+        transform: translate(300px,200px);
+        background-color: orangered;
+      }
+      100%{      transform: translatey(400px);
+      background-color: darkcyan;
+      } 
     }
   </style>
 </head>
-
 <body>
-   <div class="parent">
-     <div class="child">  
-      hi
-     </div>
-
-   </div>
+  <div class="parent">
+     <div class="child"></div>
+     <div class="child-2"></div>
+  </div>
 </body>
 </html>
