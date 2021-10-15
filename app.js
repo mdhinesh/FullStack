@@ -1,12 +1,24 @@
-let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data =>{
+const table = document.querySelector('table')
+console.log(table)
+
+
+const createRow = (user) => {
+    let newRow = document.createElement('tr')
+    let element = `
+        <td>${user.id}</td>
+        <td>${user.name}</td>
+        <td>${user.email}</td>
+        <td>${user.username}</td>`
+    newRow.innerHTML = element
+    return newRow
+}
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(res => res.json())
+.then(data => {
   console.log(data)
-}).then(data1 =>{
-  console.log(data1)
+  data.forEach(user=> {
+    table.appendChild(createRow(user))
+  })
 })
 
-// console.log(res)
-
-  // const element = document.createElement('li')
-  // const textNode = document.createTextNode(inputValue)
-  // element.appendChild(textNode)
-  // list.appendChild(element)
