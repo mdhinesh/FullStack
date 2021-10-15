@@ -1,18 +1,12 @@
-// let car = {
-//   name: "C class",
-//   manufacturer: "Mercedes",
-//   printt: () => {
-//     console.log(`${car.name} was created by ${car.manufacturer}`)
-//   }
-// } 
+let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data =>{
+  console.log(data)
+}).then(data1 =>{
+  console.log(data1)
+})
 
-// console.log(car)
+// console.log(res)
 
-// console.log(car.hasOwnProperty('name'))
-
-// // console.log(Object.values(car))
-// // console.log(Object.keys(car))
-
-var data = fetch('https://jsonplaceholder.typicode.com/todos/10')
-
-console.log(data)
+  // const element = document.createElement('li')
+  // const textNode = document.createTextNode(inputValue)
+  // element.appendChild(textNode)
+  // list.appendChild(element)
