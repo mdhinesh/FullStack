@@ -11,21 +11,23 @@ const getData = async (item) => {
     const data = await res.json()
     const recipies = data.hits
     recipies.forEach(item => {
-        console.log(item.recipe)
+        const {recipe} = item
+        const { label, image, source, calories} = recipe
+        console.log(label, image, source, calories)
         const template = ` 
-                        <img class="card__image" src="$(image)" />
+                        <img class="card__image" src="${image}" />
                         <div class="card__data">
                             <div class="card__info">
-                                <h2>Nombre Comida</h2>
-                                <p>Descripcion de la comida, con ingredientes</p>
+                                <h2>${label}</h2>
+                                <p>From ${source}</p>
                             </div>
-                            <h3 class="card__price">$7.50</h3>
+                            <h3 class="card__price">${calories.toFixed(2)}</h3>
                             <button class="card__add">+</button>
                         </div>
                     `
         const newCard = document.createElement('article')
         newCard.setAttribute('class', 'card')
-        newCard.setAttribute('style','margin:10px')
+        newCard.setAttribute('style','margin:30px')
         newCard.innerHTML = template
         console.log(newCard)
         parent.appendChild(newCard)
@@ -38,12 +40,12 @@ but.addEventListener('click', (e) => {
     getData(getText.value)
 })
 
-const person = ({
-    name:"prem",
-    age:19,
-    country:"INDIA"
-})
+// const person = ({
+//     name:"prem",
+//     age:19,
+//     country:"INDIA"
+// })
 
-const {name, age, country} = person
+// const {name, age, country} = person
 
-console.log(name,country,age)
+// console.log(name,country,age)
