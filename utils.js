@@ -17,4 +17,4 @@ module.exports.multiply = multiply
 module.exports.divide= divide
 module.exports.message = 'heyyyy'
 
-console.log(module)
+// console.log(module)
