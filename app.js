@@ -1,10 +1,12 @@
-const { dir } = require('console')
-const path = require('path')
+const fs = require('fs')
 
-console.log(path.resolve('./app.js'))
-// console.log(path.relative('/','./temp'))
-// console.log(path.extname('./app.js'))
-// console.log(path.dirname('./temp/utils.js'))
-// console.log(__dirname)
+// fs.readFile('./test.txt' ,(error,data)=>{
+//   if(error) console.log(error)
+//   else console.log(data.toString())
+// })
 
-console.log(path.join(__dirname), 'app.js')
+// console.log(fs.readFileSync('./test.txt', 'utf-8'))
+
+fs.writeFile('./test.txt','hiiiiiisdubvkbv' ,(error)=>{
+  if(error) console.log(error)
+})
