@@ -1,7 +1,9 @@
-const {add,subtract,multiply,divide,message} = require('./utils')
+const button = document.querySelector('button')
+const input = document.querySelector('input')
+const div = document.querySelector('div')
 
-add()
-subtract()
-multiply()
-divide()
-console.log(message)
+const arr = [1,2,3,4,5]
+
+localStorage.setItem("inputValue", JSON.stringify(arr))
+
+console.log(JSON.parse(localStorage.getItem("inputValue")))
