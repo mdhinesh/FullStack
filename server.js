@@ -2,13 +2,11 @@ const express = require('express')
 const PORT = 3000
 const app = express()
 
-const verify = (req,res,next)=>{
-  if(req.headers['user-agent'] === "Thunder Client (https://www.thunderclient.io)") next()
-  else res.send("BLOCKED")
-}
+app.use(express.json())
 
-app.get('/', verify, (req, res) =>{
-  res.send("VERIFIED")
+app.post('/signup', (req, res) =>{
+  console.log(req.body)
+  res.send('hiiiii')
 })
 
 app.listen(PORT,()=>{
